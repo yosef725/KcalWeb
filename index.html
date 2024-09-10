@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب السعرات الحرارية</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="name"> 
+        <h1>created by Youssef Aladawi</h1>
+        <br><br>
+        <form action="">
+            <h2>حساب السعرات الحرارية</h2>
+            <input type="number" placeholder="الطول (سم)" id="cm">
+            <input type="number" placeholder="الوزن (كجم)" id="kg">
+            <input type="number" placeholder="العمر (سنة)" id="age">
+            <div class="div1">
+                <div class="div2">
+                    <h3>الجنس</h3>
+                    <select id="sex" class="chose">
+                        <option value="option1" id="active1">الرجاء الاختيار</option>
+                        <option value="option2" id="active2">ذكر</option>
+                        <option value="option3" id="active3">أنثى</option>
+                    </select>
+                </div>
+                <div class="div2">
+                    <h3>مستوى النشاط</h3>
+                    <select id="active" class="chose">
+                        <option value="option1" id="active1">الرجاء الاختيار</option>
+                        <option value="option2" id="active2">كثر الجلوس (قليل أو معدوم النشاط)</option>
+                        <option value="option3" id="active3">نشاط خفيف (تمارين خفيفة / رياضة 1-3 أيام في الأسبوع)</option>
+                        <option value="option4" id="active4">نشاط متوسط (تمارين معتدلة / رياضة 3-5 أيام في الأسبوع)</option>
+                        <option value="option5" id="active5">نشاط عالي (تمارين شاقة / رياضة 6-7 أيام في الأسبوع)</option>
+                        <option value="option6" id="active6">نشاط فائق (تمارين صعبة جدًا / رياضة وظيفة جسدية أو تدريب مضاعف)</option>
+                    </select>
+                </div>
+            </div>
+            
+            <button type="button" onclick="calculate()">احسب</button>
+        </form>
+        <div class="results">
+
+        </div>
+       
+        <h2 id="h2"></h2>
+        <br>
+        <div class="result2">
+            <h2 id="reuslt"></h2>
+        </div>
+        <div id="plus" style="display: flex; padding-right:490px ;">
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
